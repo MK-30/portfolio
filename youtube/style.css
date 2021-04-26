@@ -1,0 +1,149 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* Size */
+  --spacing: 12px;
+  --spacing-small: 6px;
+  --avatar-size: 36px;
+
+  /* Font Size */
+  --font-large: 20px;
+  --font-regular: 16px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background: var(--black-color);
+  color: var(--white-color);
+  padding: var(--spacing);
+}
+
+header .logo .fa-youtube {
+  color: #ff0000;
+}
+
+header .icons .fa-search {
+  margin-right: 10px;
+}
+
+/* video */
+
+.player {
+  position: sticky;
+  /* top: 0; */
+  text-align: center;
+  background-color: var(--black-color);
+  margin-bottom: 10px;
+}
+
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+/* video info */
+.info .metadata .hashtags {
+  display: flex;
+  list-style: none;
+}
+
+.info .metadata .hashtags li {
+  margin-right: 10px;
+  font-size: var(--spacing-medium);
+  color: var(--blue-color);
+}
+
+.info .titleAndButton {
+  display: flex;
+}
+
+.info .titleAndButton .title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.info .views {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.info > ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.info > ul > li > button {
+  display: flex;
+  flex-direction: column;
+}
+
+.info .channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+
+.info .channel .info {
+  display: flex;
+}
+
+.info .channel .metadata {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-small) 0;
+}
+
+.info .channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: var(--font-medium);
+}
+
+.info .channel .metadata .info .subscribers {
+  color: var(--grey-dark-color);
+}
+
+.info .channel .metadata img {
+  width: var(--font-small);
+}
+
+/* upNext */
+.upNext img {
+  width: 38%;
+}
+
+.upNext ul li {
+  display: flex;
+
+  margin-bottom: 10px;
+}
